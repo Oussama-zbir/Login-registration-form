@@ -1,0 +1,62 @@
+<html lang="eng">
+<head>
+    <title>Login And Registration Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+   
+   <div class="bg1">
+        <div class="bg2">
+            <div class="button-area">
+                <div class="btn"></div>
+                <button type="button" class="thebuttons" onclick="register()">REGISTER</button>
+                <button type="button" class="thebuttons" onclick="login()">LOG IN</button>
+            </div>
+        <div class="social-media-icons">
+            <img src="facebook.png">
+            <img src="instagram.png"> 
+            <img src="twitter.png">
+        </div>
+        <form id="login" class="input-group">
+            <input type="email" class="input-field" placeholder="E-mail" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <br><br>
+            <input type="checkbox" class="check-box"> <span>remember password</span>
+            <br><br>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Enter your name" required>
+            <input type="email" class="input-field" placeholder="Enter an Email" required>
+            <input type="password" class="input-field" placeholder="Enter a password" required>
+            <br><br>
+            <input type="checkbox" class="check-box"> <span>I agree to the terms & conditions </span>
+            <br><br>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        </div>
+
+    </div>
+    <script>
+        var x = document.getElementById("register");
+        var y = document.getElementById("login");
+        var z = document.getElementById("btn");
+
+        function login(){
+            x.style.left = "-450px"
+            y.style.left = "50px"
+            z.style.left = "150px"
+        }
+        function register(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        
+        }
+    </script>
+
+
+
+</body>
+</html>
